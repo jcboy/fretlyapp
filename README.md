@@ -33,3 +33,9 @@ package.json de sorte qu'on puisse lancer le projet avec npm install + npm start
 
 - Affichage de la phrase:<br>
    “Il y a actuellement [NOMBRE] [‘Chargeur(s)’||’Transporteur(s)’] inscrit(s)”
+
+**Aperçu**
+
+![alt text](./frontend/src/assets/images/fretlyapp-01.png)
+
+![alt text](./frontend/src/assets/images/fretlyapp-01.png)
