@@ -1,0 +1,36 @@
+<div class="wrap d-flex flex-column justify-content-center ">
+
+  <form (ngSubmit)="onLogin(formLogin)"
+        #formLogin="ngForm"
+        class="needs-validation">
+      <div class="text-center logo-content mb-4">
+        <img src="{{'assets/images/jcboy-logo.png'}}" alt="image" class="logo"/>
+      </div>
+
+        <div class="row mb-3">
+
+          <div class="col-sm-10">
+            <span *ngIf="formLogin.submitted && formLogin.controls['email'].errors"
+                  class="text-danger fst-italic">Email obligatoire</span>
+            <input type="email" name="email" placeholder="Email" class="form-control"  ngModel required>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-sm-10">
+            <span *ngIf="formLogin.submitted && formLogin.controls['password'].errors"
+                  class="text-danger fst-italic">Doit contenir au moins 4 caractères</span>
+            <input type="password" name="password" placeholder="Saisir un mot de passe" class="form-control"
+                   ngModel required minlength="4">
+          </div>
+        </div>
+        <div class="d-grid gap-2 col-8 mx-auto">
+          <button type="submit" class="btn ">SE CONNECTER</button>
+        </div>
+        <p class="mt-4"><span class="fw-bold">Vous n'avez pas de compte ? </span>
+          <a routerLink="/auth/register">Enregistrez-vous</a>
+        </p>
+      </form>
+
+</div>
+
+

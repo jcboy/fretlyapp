@@ -1,0 +1,56 @@
+<div class="wrap d-flex flex-column justify-content-center ">
+
+  <form (ngSubmit)="onRegister(formRegister)"
+        #formRegister="ngForm"
+        class="needs-validation">
+    <div class="text-center logo-content mb-4">
+      <img src="{{'assets/images/jcboy-logo.png'}}" alt="image" class="logo"/>
+    </div>
+    <fieldset class="row mb-1">
+      <legend class="col-form-label  pt-0">Profil de l’entreprise</legend>
+      <span *ngIf="formRegister.submitted && formRegister.controls['typeUser'].errors"
+            class="text-danger fst-italic">Choisissez un profil</span>
+      <div class="">
+        <div class="form-check">
+          <input ngModel required class="form-check-input" type="radio" name="typeUser" value="transporteur">
+          <label class="form-check-label">Transporteur</label>
+        </div>
+        <div class="form-check">
+          <input ngModel required class="form-check-input" type="radio" name="typeUser" value="chargeur">
+          <label class="form-check-label">Chargeur</label>
+        </div>
+      </div>
+    </fieldset>
+    <div class="row mb-3">
+
+      <div class="col-sm-10">
+        <span *ngIf="formRegister.submitted && formRegister.controls['email'].errors"
+              class="text-danger fst-italic">Champ email obligatoire</span>
+        <input type="email" name="email" placeholder="Email" class="form-control"  ngModel required email>
+      </div>
+    </div>
+    <div class="row mb-4">
+      <div class="col-sm-10">
+        <span *ngIf="formRegister.submitted && formRegister.controls['password'].errors"
+              class="text-danger fst-italic">Champ password obligatoire</span>
+        <input type="password" name="password" placeholder="Saisir un mot de passe" class="form-control" ngModel required>
+      </div>
+    </div>
+
+
+    <div class="mb-3">
+      Tous les champs sont obligatoires<br>
+      L’inscription à Fretly entraîne l’acceptation des
+      <a href="">Conditions Générales d’utilisation</a> de la plateforme.
+    </div>
+    <div class="d-grid gap-2 col-8 mx-auto">
+      <button type="submit" class="btn ">S'INSCRIRE</button>
+    </div>
+    <p class="mt-4"><span class="fw-bold">Vous avez déjà un compte ? </span>
+      <a routerLink="/auth/login">Connectez-vous</a>
+    </p>
+  </form>
+
+</div>
+
+

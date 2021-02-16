@@ -1,0 +1,13 @@
+html, body {height: 100%!important;}
+body {font-size: 0.75rem; color: #828282;}
+a {color: #008cbb; text-decoration: none;}
+a:hover {color: #008cbb; text-decoration: underline;}
+.wrap {height: 100%;}
+form {width: 100%; max-width: 340px; margin: auto;  }
+form .form-control {
+  padding-left:0; padding-right: 0; border: 0 none; border-bottom: 1px solid #ccc; border-radius: 0px; font-size: 0.75rem;
+}
+::placeholder { font-size: 0.75rem; color: #bdbdbd;}
+.btn {padding: .5rem .75rem; background-color: #008cbb; color: #fff; font-size: 0.875rem; border-radius: 20px;}
+.btn:hover {background-color: #fff; color: #008cbb; border-color: #008cbb;}
+.logo-content .logo { width: 140px;}
