@@ -38,6 +38,6 @@ package.json de sorte qu'on puisse lancer le projet avec npm install + npm start
 
 ![alt text](./frontend/src/assets/images/fretlyapp-02.png) ![alt text](./frontend/src/assets/images/fretlyapp-01.png) 
 
-<br>
+<br> <br>
 
 ![alt text](./frontend/src/assets/images/fretlyapp-03.png)
