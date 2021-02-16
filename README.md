@@ -15,8 +15,8 @@ package.json de sorte qu'on puisse lancer le projet avec npm install + npm start
    
 - Utilisateur avec 
   - 3 champs obligatoires: un email, un mdp, un type; si un champ manquant,
-   message d'erreur visible par l'utilisateur
-  - L'email est unique dans la BDD sinon retourne une erreur visible par l'utilisateur
+   message d'erreur visible par l'utilisateur.
+  - L'email est unique dans la BDD sinon retourne une erreur visible par l'utilisateur.
     
 - Le type d'utilisateur peut être soit transporteur, soit chargeur. Choix à l’aide d’un bouton radio.
 
